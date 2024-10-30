@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "frontends",
   "version": "0.1.0",
   "private": true,
@@ -46,5 +47,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+=======
+  "name": "health-tracker",
+  "version": "1.0.0",
+  "description": "Health Tracker Application",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+>>>>>>> a52628a6dd98fcce1a7fa1e42f679866b52f78ae
   }
 }
